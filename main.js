@@ -4,7 +4,6 @@ hello.style.backgroundColor = "pink"
 //
 let p1 = document.getElementById("p1")
 p1.style.fontWeight = "bold"
-//
 p1.classList.add("p")
 //
 let img = document.getElementsByTagName("img")[0]
@@ -31,7 +30,9 @@ li3.style.border = "1px solid hotpink"
 ul.appendChild(li3)
 
 //
-let table = document.getElementById("table")
+let tableContainer = document.getElementById("tableContainer")
+let table = document.createElement("table")
+tableContainer.appendChild(table)
 
 let row1 = document.createElement("tr")
 
